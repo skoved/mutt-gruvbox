@@ -1,66 +1,66 @@
 # gruvbox dark (contrast dark):
 
-# bg0    = 234
-# bg1    = 237
-# bg2    = 239
-# bg3    = 241
-# bg4    = 243
-# 
-# gray   = 245
-# 
-# fg0    = 229
-# fg1    = 223
-# fg2    = 250
-# fg3    = 248
-# fg4    = 246
-# 
-# red    = 167
-# green  = 142
-# yellow = 214
-# blue   = 109
-# purple = 175
-# aqua   = 108
-# orange = 208
+# bg0    = 234 #f2e5bc
+# bg1    = 237 #ebdbb2
+# bg2    = 239 #d5c4a1
+# bg3    = 241 #bdae93
+# bg4    = 243 #a89984
+#
+# gray   = 245 #928374
+#
+# fg0    = 229 #282828
+# fg1    = 223 #3c3836
+# fg2    = 250 #504945
+# fg3    = 248 #665c54
+# fg4    = 246 #7c6f64
+#
+# red    = 167 #9d0006
+# green  = 142 #79740e
+# yellow = 214 #b57614
+# blue   = 109 #076678
+# purple = 175 #8f3f71
+# aqua   = 108 #427b58
+# orange = 208 #3c3836
 
 
 # See http://www.mutt.org/doc/manual/#color
 
-color attachment  color109 color234
-color bold        color229 color234
-color error       color167 color234
-color hdrdefault  color246 color234
-color indicator   color223 color237
-color markers     color243 color234
-color normal      color223 color234
-color quoted      color250 color234
-color quoted1     color108 color234
-color quoted2     color250 color234
-color quoted3     color108 color234
-color quoted4     color250 color234
-color quoted5     color108 color234
-color search      color234 color208
-color signature   color108 color234
-color status      color234 color250
-color tilde       color243 color234
-color tree        color142 color234
-color underline   color223 color239
+color attachment  #076678 #f2e5bc
+color bold        #282828 #f2e5bc
+color error       #9d0006 #f2e5bc
+color hdrdefault  #7c6f64 #f2e5bc
+color indicator   #3c3836 #ebdbb2
+color markers     #a89984 #f2e5bc
+color normal      #3c3836 #f2e5bc
+color quoted      #504945 #f2e5bc
+color quoted1     #427b58 #f2e5bc
+color quoted2     #504945 #f2e5bc
+color quoted3     #427b58 #f2e5bc
+color quoted4     #504945 #f2e5bc
+color quoted5     #427b58 #f2e5bc
+color search      #f2e5bc #af3a03
+color signature   #427b58 #f2e5bc
+color status      #f2e5bc #504945
+color tilde       #a89984 #f2e5bc
+color tree        #79740e #f2e5bc
+color underline   #3c3836 #d5c4a1
 
-color sidebar_divider    color250 color234
-color sidebar_new        color142 color234
+color sidebar_divider    #504945 #f2e5bc
+color sidebar_new        #79740e #f2e5bc
 
-color index color142 color234 ~N
-color index color108 color234 ~O
-color index color109 color234 ~P
-color index color214 color234 ~F
-color index color175 color234 ~Q
-color index color167 color234 ~=
-color index color234 color223 ~T
-color index color234 color167 ~D
+color index #79740e #f2e5bc ~N
+color index #427b58 #f2e5bc ~O
+color index #076678 #f2e5bc ~P
+color index #b57614 #f2e5bc ~F
+color index #8f3f71 #f2e5bc ~Q
+color index #9d0006 #f2e5bc ~=
+color index #f2e5bc #3c3836 ~T
+color index #f2e5bc #9d0006 ~D
 
-color header color214 color234 "^(To:|From:)"
-color header color142 color234 "^Subject:"
-color header color108 color234 "^X-Spam-Status:"
-color header color108 color234 "^Received:"
+color header #b57614 #f2e5bc "^(To:|From:)"
+color header #79740e #f2e5bc "^Subject:"
+color header #427b58 #f2e5bc "^X-Spam-Status:"
+color header #427b58 #f2e5bc "^Received:"
 
 # Regex magic for URLs and hostnames
 #
@@ -81,41 +81,41 @@ color header color108 color234 "^Received:"
 #   23.59
 #   w.l.o.g
 #   team.its
-color body color142 color234 "[a-z]{3,255}://[[:graph:]]*"
-color body color142 color234 "([-[:alnum:]]+\\.)+([0-9]{1,3}|[-[:alpha:]]+)/[[:graph:]]*"
-color body color142 color234 "([-[:alnum:]]+\\.){2,255}[-[:alpha:]]{2,10}"
+color body #79740e #f2e5bc "[a-z]{3,255}://[[:graph:]]*"
+color body #79740e #f2e5bc "([-[:alnum:]]+\\.)+([0-9]{1,3}|[-[:alpha:]]+)/[[:graph:]]*"
+color body #79740e #f2e5bc "([-[:alnum:]]+\\.){2,255}[-[:alpha:]]{2,10}"
 
 # IPv4 and IPv6 stolen from https://stackoverflow.com/questions/53497/regular-expression-that-matches-valid-ipv6-addresses
-color body color142 color234 "((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])"
-color body color142 color234 "(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))"
+color body #79740e #f2e5bc "((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])"
+color body #79740e #f2e5bc "(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))"
 
 # Mail addresses and mailto URLs
-color body color208 color234 "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
-color body color208 color234 "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+color body #af3a03 #f2e5bc "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+color body #af3a03 #f2e5bc "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
 
 # some simleys and stuff
-color body color234 color214 "[;:]-*[)>(<lt;|]"
-color body color229 color234 "\\*[- A-Za-z]+\\*"
+color body #f2e5bc #b57614 "[;:]-*[)>(<lt;|]"
+color body #282828 #f2e5bc "\\*[- A-Za-z]+\\*"
 
-color body color214 color234 "^-.*PGP.*-*"
-color body color142 color234 "^gpg: Good signature from"
-color body color167 color234 "^gpg: Can't.*$"
-color body color214 color234 "^gpg: WARNING:.*$"
-color body color167 color234 "^gpg: BAD signature from"
-color body color167 color234 "^gpg: Note: This key has expired!"
-color body color214 color234 "^gpg: There is no indication that the signature belongs to the owner."
-color body color214 color234 "^gpg: can't handle these multiple signatures"
-color body color214 color234 "^gpg: signature verification suppressed"
-color body color214 color234 "^gpg: invalid node with packet of type"
+color body #b57614 #f2e5bc "^-.*PGP.*-*"
+color body #79740e #f2e5bc "^gpg: Good signature from"
+color body #9d0006 #f2e5bc "^gpg: Can't.*$"
+color body #b57614 #f2e5bc "^gpg: WARNING:.*$"
+color body #9d0006 #f2e5bc "^gpg: BAD signature from"
+color body #9d0006 #f2e5bc "^gpg: Note: This key has expired!"
+color body #b57614 #f2e5bc "^gpg: There is no indication that the signature belongs to the owner."
+color body #b57614 #f2e5bc "^gpg: can't handle these multiple signatures"
+color body #b57614 #f2e5bc "^gpg: signature verification suppressed"
+color body #b57614 #f2e5bc "^gpg: invalid node with packet of type"
 
-color body color142 color234 "^Good signature from:"
-color body color167 color234 "^.?BAD.? signature from:"
-color body color142 color234 "^Verification successful"
-color body color167 color234 "^Verification [^s][^[:space:]]*$"
+color body #79740e #f2e5bc "^Good signature from:"
+color body #9d0006 #f2e5bc "^.?BAD.? signature from:"
+color body #79740e #f2e5bc "^Verification successful"
+color body #9d0006 #f2e5bc "^Verification [^s][^[:space:]]*$"
 
-color compose header            color223 color234
-color compose security_encrypt  color175 color234
-color compose security_sign     color109 color234
-color compose security_both     color142 color234
-color compose security_none     color208 color234
+color compose header            #3c3836 #f2e5bc
+color compose security_encrypt  #8f3f71 #f2e5bc
+color compose security_sign     #076678 #f2e5bc
+color compose security_both     #79740e #f2e5bc
+color compose security_none     #af3a03 #f2e5bc
 
